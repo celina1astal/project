@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Celina Das | Bio-data</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+    <div class="logo">ABOUT ME</div>
+
+    <nav>
+
+        <a href="index.html">Resume</a>
+
+        <a href="biodata.html" class="active">
+            Bio-data
+        </a>
+
+        <a href="projects.html">
+            Projects
+        </a>
+
+    </nav>
+
+
+    <button class="theme-btn"
+            onclick="toggleTheme()">
+
+        <i class="fas fa-moon"></i>
+
+    </button>
+
+</header>
+
+
+<main>
+
+<!-- PAGE HEADER -->
+
+<section class="page-banner">
+
+    <p>
+        A detailed overview of my personal,
+        educational and professional background.
+    </p>
+
+    <button class="btn"
+            onclick="printBioData()">
+
+        <i class="fas fa-print"></i>
+        Print Bio-data
+
+    </button>
+
+</section>
+
+
+<!-- PROFILE -->
+
+<section class="section">
+
+    <div class="bio-profile">
+
+        <div class="profile-icon">
+
+            <img src="images/p.png" alt="Celina Das">
+
+        </div>
+
+        <div>
+
+            <h2>Celina Das</h2>
+
+            <p class="role">
+                Computer Science Engineering Student
+            </p>
+
+            <p>
+                I am a motivated and enthusiastic student with an interest
+                in technology, programming, artificial intelligence and
+                modern web development.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PERSONAL DETAILS -->
+
+<section class="section alternate">
+
+    <div class="section-title">
+
+        <p>ABOUT ME</p>
+
+        <h2>Personal Details</h2>
+
+    </div>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <tr>
+                <th>Full Name</th>
+                <td>Celina Das</td>
+            </tr>
+
+            <tr>
+                <th>Date of Birth</th>
+                <td>DD / MM / YYYY</td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td>Female</td>
+            </tr>
+
+            <tr>
+                <th>Nationality</th>
+                <td>Indian</td>
+            </tr>
+
+            <tr>
+                <th>Marital Status</th>
+                <td>Single</td>
+            </tr>
+
+            <tr>
+                <th>Languages Known</th>
+                <td>English, Hindi, Kannada</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>celina@example.com</td>
+            </tr>
+
+            <tr>
+                <th>Phone</th>
+                <td>+91 98765 43210</td>
+            </tr>
+
+            <tr>
+                <th>Address</th>
+                <td>India</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- HOBBIES -->
+
+<section class="section alternate">
+
+    <div class="section-title">
+
+        <p>PERSONALITY</p>
+
+        <h2>Hobbies & Interests</h2>
+
+    </div>
+
+
+    <div class="hobby-grid">
+
+        <article class="hobby-card">
+
+            <i class="fas fa-laptop-code"></i>
+
+            <h3>Coding</h3>
+
+            <p>
+                Enjoy developing small applications and exploring
+                new programming technologies.
+            </p>
+
+        </article>
+
+
+        <article class="hobby-card">
+
+            <i class="fas fa-book-open"></i>
+
+            <h3>Reading</h3>
+
+            <p>
+                Interested in technology-related articles,
+                learning resources and informative content.
+            </p>
+
+        </article>
+
+
+        <article class="hobby-card">
+
+            <i class="fas fa-music"></i>
+
+            <h3>Music</h3>
+
+            <p>
+                Music is one of my favourite ways to relax
+                and maintain creativity.
+            </p>
+
+        </article>
+
+
+        <article class="hobby-card">
+
+            <i class="fas fa-camera"></i>
+
+            <h3>Photography</h3>
+
+            <p>
+                Interested in capturing creative moments,
+                places and everyday experiences.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- STRENGTHS -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <p>MY QUALITIES</p>
+
+        <h2>Strengths</h2>
+
+    </div>
+
+
+    <div class="three-columns">
+
+        <article class="info-card">
+
+            <i class="fas fa-lightbulb"></i>
+
+            <h3>Creative Thinking</h3>
+
+            <p>
+                I enjoy finding simple and creative solutions
+                to technical problems.
+            </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+            <i class="fas fa-users"></i>
+
+            <h3>Teamwork</h3>
+
+            <p>
+                Comfortable collaborating with team members
+                during academic and technical projects.
+            </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+            <i class="fas fa-chart-line"></i>
+
+            <h3>Continuous Learning</h3>
+
+            <p>
+                Always interested in learning new tools,
+                technologies and development practices.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © <span id="year"></span> Celina Das
+    </p>
+
+    <p>
+        Bio-data | Student Portfolio
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

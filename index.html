@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celina Das | Resume</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo"> ABOUT ME </div>
+
+    <nav>
+        <a href="index.html" class="active">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <button class="theme-btn" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-text">
+
+        <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hello, I'm <span>Celina</span></h1>
+
+        <h2>Computer Science Engineering Student</h2>
+
+        <p id="greeting"></p>
+
+        <p class="intro">
+            A passionate Computer Science Engineering student interested in
+            web development, artificial intelligence, machine learning and
+            creating practical technology solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#resume" class="btn">View Resume</a>
+
+            <button class="btn outline" onclick="printResume()">
+                <i class="fas fa-print"></i> Print Resume
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="profile-card">
+
+        <div class="profile-icon">
+            <img src="images/p.png" alt="Celina Das">
+        </div>
+
+        <h3>Celina Das</h3>
+
+        <p>Computer Science Engineering</p>
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:celina@example.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <div class="availability">
+            <span></span> Available for Opportunities
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESUME -->
+<section class="section" id="resume">
+
+    <div class="section-title">
+        <p>MY PROFILE</p>
+        <h2>Resume</h2>
+    </div>
+
+
+    <div class="resume-grid">
+
+        <!-- LEFT -->
+        <div>
+
+            <article class="resume-card">
+
+                <h3>
+                    <i class="fas fa-bullseye"></i>
+                    Career Objective
+                </h3>
+
+                <p>
+                    To obtain an opportunity where I can apply my technical
+                    knowledge, improve my programming skills and contribute
+                    to meaningful software solutions while continuously
+                    learning new technologies.
+                </p>
+
+            </article>
+
+
+            <article class="resume-card">
+
+                <h3>
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <span>2024 – Present</span>
+
+                        <h4>Bachelor of Engineering</h4>
+
+                        <p>
+                            Computer Science Engineering
+                        </p>
+
+                        <small>
+                            Engineering College, India
+                        </small>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <span>2022 – 2024</span>
+
+                        <h4>Higher Secondary Education</h4>
+
+                        <p>
+                            Science Stream
+                        </p>
+
+                        <small>
+                            Higher Secondary School
+                        </small>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <span>2020 – 2022</span>
+
+                        <h4>Secondary Education</h4>
+
+                        <p>
+                            School Education
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div>
+
+            <article class="resume-card">
+
+                <h3>
+                    <i class="fas fa-code"></i>
+                    Technical Skills
+                </h3>
+
+                <div class="skill">
+
+                    <div>
+                        <span>HTML</span>
+                        <b>90%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:90%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div>
+                        <span>CSS</span>
+                        <b>85%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div>
+                        <span>JavaScript</span>
+                        <b>80%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:80%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div>
+                        <span>Python</span>
+                        <b>85%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div>
+                        <span>Machine Learning</span>
+                        <b>75%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:75%"></div>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="resume-card">
+
+                <h3>
+                    <i class="fas fa-heart"></i>
+                    Areas of Interest
+                </h3>
+
+                <div class="tags">
+
+                    <span>Web Development</span>
+                    <span>Artificial Intelligence</span>
+                    <span>Machine Learning</span>
+                    <span>UI Design</span>
+                    <span>Data Science</span>
+                    <span>Problem Solving</span>
+
+                </div>
+
+            </article>
+
+
+            <article class="resume-card">
+
+                <h3>
+                    <i class="fas fa-language"></i>
+                    Languages
+                </h3>
+
+                <div class="language-list">
+
+                    <p>
+                        <b>English</b>
+                        <span>Professional</span>
+                    </p>
+
+                    <p>
+                        <b>Hindi</b>
+                        <span>Fluent</span>
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+<section class="section alternate">
+
+    <div class="section-title">
+        <p>MY JOURNEY</p>
+        <h2>Experience & Certifications</h2>
+    </div>
+
+
+    <div class="three-columns">
+
+        <article class="info-card">
+
+            <i class="fas fa-laptop-code"></i>
+
+            <h3>Web Development</h3>
+
+            <p>
+                Designed responsive websites using HTML, CSS and JavaScript
+                with emphasis on usability and clean presentation.
+            </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+            <i class="fas fa-robot"></i>
+
+            <h3>AI & ML Projects</h3>
+
+            <p>
+                Worked on practical projects involving artificial intelligence,
+                machine learning, prediction systems and chatbot development.
+            </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+            <i class="fas fa-certificate"></i>
+
+            <h3>Technical Learning</h3>
+
+            <p>
+                Continuously developing programming, database, web development
+                and software engineering skills through academic projects.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section">
+
+    <div class="section-title">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Information</h2>
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+
+            <div>
+                <h4>Email</h4>
+                <p>celinadas111@gmail.com</p>
+            </div>
+        </div>
+
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+
+            <div>
+                <h4>Phone</h4>
+                <p>+91 80882 97462</p>
+            </div>
+        </div>
+
+
+        <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+
+            <div>
+                <h4>Location</h4>
+                <p>India</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © <span id="year"></span> Celina Das
+    </p>
+
+    <p>
+        <i class="fas fa-clock"></i>
+        <span id="clock"></span>
+    </p>
+
+    <p>Designed with HTML, CSS & JavaScript</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Celina Das | Projects</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+    <div class="logo">ABOUT ME</div>
+
+    <nav>
+
+        <a href="index.html">
+            Resume
+        </a>
+
+        <a href="biodata.html">
+            Bio-data
+        </a>
+
+        <a href="projects.html" class="active">
+            Projects
+        </a>
+
+    </nav>
+
+
+    <button class="theme-btn"
+            onclick="toggleTheme()">
+
+        <i class="fas fa-moon"></i>
+
+    </button>
+
+</header>
+
+
+<main>
+
+
+
+<!-- PROJECTS -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <p>MY WORK</p>
+
+        <h2>Projects</h2>
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filter-buttons">
+
+        <button class="filter active"
+                onclick="filterProjects('all')">
+
+            All
+
+        </button>
+
+        <button class="filter"
+                onclick="filterProjects('web')">
+
+            Web
+
+        </button>
+
+        <button class="filter"
+                onclick="filterProjects('ai')">
+
+            AI / ML
+
+        </button>
+
+        <button class="filter"
+                onclick="filterProjects('other')">
+
+            Other
+
+        </button>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+        <article class="project-card"
+                 data-category="web">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <i class="fas fa-globe"></i>
+
+            <h3>Resume Website</h3>
+
+            <p>
+                A responsive multi-page personal resume website
+                created using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card"
+                 data-category="ai">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <i class="fas fa-robot"></i>
+
+            <h3>Legal Helpdesk Chatbot</h3>
+
+            <p>
+                An AI-based chatbot designed to provide cooperative
+                society related legal and governance information.
+            </p>
+
+            <div class="project-tags">
+
+                <span>Python</span>
+                <span>LangGraph</span>
+                <span>RAG</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card"
+                 data-category="ai">
+
+            <div class="project-number">
+                03
+            </div>
+
+            <i class="fas fa-chart-line"></i>
+
+            <h3>Risk Prediction System</h3>
+
+            <p>
+                A machine learning concept for predicting project
+                risks using financial, schedule and contextual signals.
+            </p>
+
+            <div class="project-tags">
+
+                <span>Python</span>
+                <span>ML</span>
+                <span>Data</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card"
+                 data-category="web">
+
+            <div class="project-number">
+                04
+            </div>
+
+            <i class="fas fa-building"></i>
+
+            <h3>Construction Company Website</h3>
+
+            <p>
+                A corporate website containing company profile,
+                services, projects, certifications and contact details.
+            </p>
+
+            <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card"
+                 data-category="other">
+
+            <div class="project-number">
+                05
+            </div>
+
+            <i class="fas fa-calculator"></i>
+
+            <h3>Construction Budget Planner</h3>
+
+            <p>
+                A JavaScript-based calculator that estimates
+                construction cost based on user-selected factors.
+            </p>
+
+            <div class="project-tags">
+
+                <span>JavaScript</span>
+                <span>Calculator</span>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card"
+                 data-category="other">
+
+            <div class="project-number">
+                06
+            </div>
+
+            <i class="fas fa-newspaper"></i>
+
+            <h3>Daily News Website</h3>
+
+            <p>
+                A newspaper-style webpage designed with HTML and
+                CSS using a structured newspaper layout.
+            </p>
+
+            <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- SKILL CALCULATOR -->
+
+<section class="section alternate">
+
+    <div class="section-title">
+
+        <p>INTERACTIVE JAVASCRIPT</p>
+
+        <h2>Skill Score Calculator</h2>
+
+        <p>
+            Enter your skill levels to calculate
+            your overall technical score.
+        </p>
+
+    </div>
+
+
+    <div class="calculator">
+
+        <div class="input-grid">
+
+            <div class="input-box">
+
+                <label>HTML</label>
+
+                <input type="number"
+                       id="htmlSkill"
+                       min="0"
+                       max="100"
+                       value="80">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>CSS</label>
+
+                <input type="number"
+                       id="cssSkill"
+                       min="0"
+                       max="100"
+                       value="75">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>JavaScript</label>
+
+                <input type="number"
+                       id="jsSkill"
+                       min="0"
+                       max="100"
+                       value="70">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Python</label>
+
+                <input type="number"
+                       id="pythonSkill"
+                       min="0"
+                       max="100"
+                       value="80">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Machine Learning</label>
+
+                <input type="number"
+                       id="mlSkill"
+                       min="0"
+                       max="100"
+                       value="65">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Database</label>
+
+                <input type="number"
+                       id="databaseSkill"
+                       min="0"
+                       max="100"
+                       value="70">
+
+            </div>
+
+        </div>
+
+
+        <button class="calculate-btn"
+                onclick="calculateSkill()">
+
+            <i class="fas fa-calculator"></i>
+
+            Calculate My Score
+
+        </button>
+
+
+        <div id="skillResult"
+             class="skill-result">
+
+            <h3>Your Result</h3>
+
+            <div class="score-circle">
+
+                <span id="score">0</span>%
+
+            </div>
+
+            <h4 id="skillGrade">
+                Enter your skills
+            </h4>
+
+            <p id="skillMessage">
+                Your result will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- CONTACT FORM -->
+
+<section class="section alternate">
+
+    <div class="section-title">
+
+        <p>CONTACT ME</p>
+
+        <h2>Send a Message</h2>
+
+    </div>
+
+
+    <form class="contact-form"
+          onsubmit="return submitForm()">
+
+        <div class="form-row">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Your Name">
+
+            <input type="email"
+                   id="email"
+                   placeholder="Your Email">
+
+        </div>
+
+
+        <input type="text"
+               id="subject"
+               placeholder="Subject">
+
+
+        <textarea id="message"
+                  rows="6"
+                  placeholder="Your Message"></textarea>
+
+
+        <button type="submit"
+                class="btn">
+
+            <i class="fas fa-paper-plane"></i>
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © <span id="year"></span> Celina Das
+    </p>
+
+    <p>
+        <i class="fas fa-clock"></i>
+        <span id="clock"></span>
+    </p>
+
+    <p>
+        Student Portfolio
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
